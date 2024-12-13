@@ -20,7 +20,7 @@ const products = [
     {
         id: 3,
         name: "Nến thơm vỏ sò một tầng",
-        price: 399000,
+        price: 75000,
         image: "img/ngoctrai2.jpg",
         description: "Nến thơm vỏ sò một tầng thiết kế thanh lịch, phù hợp cho việc thư giãn và trang trí phòng ốc",
         category: "nam & nu"
