@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIDAL TREASURES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">TIDAL TREASURES</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Trang chủ</a></li>
+                <li><a href="index.html#trending">Xu hướng</a></li>
+                <li><a href="index.html#products">Sản phẩm</a></li>
+                <li><a href="index.html#about">Về chúng tôi</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-icon" title="Tìm kiếm">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" title="Giỏ hàng">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-icon" title="Tài khoản">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Account Content -->
+    <div class="account-container">
+        <div class="account-sidebar">
+            <div class="user-info">
+                <img src="img/avatar.jpg" alt="Avatar" class="user-avatar">
+                <h3 class="user-name">Tên người dùng</h3>
+            </div>
+            <ul class="account-menu">
+                <li class="active"><a href="#profile"><i class="fas fa-user"></i> Thông tin cá nhân</a></li>
+                <li><a href="#orders"><i class="fas fa-shopping-bag"></i> Đơn hàng của tôi</a></li>
+                <li><a href="#address"><i class="fas fa-map-marker-alt"></i> Sổ địa chỉ</a></li>
+                <li><a href="#wishlist"><i class="fas fa-heart"></i> Sản phẩm yêu thích</a></li>
+                <li><a href="#password"><i class="fas fa-lock"></i> Đổi mật khẩu</a></li>
+            </ul>
+        </div>
+        <div class="account-content">
+            <!-- Các section sẽ được hiển thị/ẩn bằng JavaScript -->
+            <section id="profile" class="account-section active">
+                <h2>Thông tin cá nhân</h2>
+                <form id="profile-form" class="account-form">
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        <input type="text" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        <input type="tel" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày sinh</label>
+                        <input type="date" name="birthday">
+                    </div>
+                    <button type="submit" class="cta-button">Cập nhật thông tin</button>
+                </form>
+            </section>
+            
+            <!-- Các section khác -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fashion Store</h3>
+                <p>Thời trang cao cấp cho mọi người</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="index.html#about">Về chúng tôi</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Tài khoản</h3>
+                <ul>
+                    <li><a href="account.html">Tài khoản của tôi</a></li>
+                    <li><a href="account.html#orders">Lịch sử đơn hàng</a></li>
+                    <li><a href="account.html#wishlist">Danh sách yêu thích</a></li>
+                    <li><a href="cart.html">Giỏ hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Thanh toán</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
+    
+</body>
+</html> 

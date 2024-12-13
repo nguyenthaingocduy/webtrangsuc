@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIDAL TREASURES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">TIDAL TREASURES</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Trang chủ</a></li>
+                <li><a href="index.html#trending">Xu hướng</a></li>
+                <li><a href="index.html#products">Sản phẩm</a></li>
+                <li><a href="index.html#about">Về chúng tôi</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="product-detail-container">
+        <div class="product-breadcrumb">
+            <a href="index.html">Trang chủ</a> / 
+            <a href="index.html#products">Sản phẩm</a> / 
+            <span class="product-name">Tên sản phẩm</span>
+        </div>
+
+        <div class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="" alt="" id="main-product-image">
+                </div>
+                <div class="thumbnail-images">
+                    <!-- Thumbnails will be added here -->
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title"></h1>
+                <div class="product-meta">
+                    <span class="product-sku">Mã SP: <span class="sku-value"></span></span>
+                    <span class="product-category">Danh mục: <span class="category-value"></span></span>
+                </div>
+                <div class="product-price"></div>
+                <div class="product-description"></div>
+
+                <div class="product-options">
+                    <!-- <div class="size-selection">
+                        <h3>Kích thước</h3>
+                        <div class="size-options">
+                            <button class="size-option" data-size="S">S</button>
+                            <button class="size-option" data-size="M">M</button>
+                            <button class="size-option" data-size="L">L</button>
+                            <button class="size-option" data-size="XL">XL</button>
+                        </div>
+                    </div> -->
+
+                    <div class="quantity-selection">
+                        <h3>Số lượng</h3>
+                        <div class="quantity-input">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                    <button class="buy-now-btn">Mua ngay</button>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Miễn phí vận chuyển cho đơn hàng từ 500K</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-undo"></i>
+                        <span>Đổi trả miễn phí trong 30 ngày</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Bảo hành chính hãng 12 tháng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details Tabs -->
+        <!-- <div class="product-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="description">Mô tả</button>
+                <button class="tab-btn" data-tab="specifications">Thông số</button>
+                <button class="tab-btn" data-tab="size-guide">Hướng dẫn chọn size</button>
+            </div>
+            <div class="tab-content">
+                <div id="description" class="tab-pane active">
+                    <div class="product-description-content">
+                        <h3>Mô tả chi tiết</h3>
+                        <div class="description-text">
+                            <p>Áo sơ mi trắng nam được thiết kế với form regular fit thanh lịch, phù hợp với nhiều vóc dáng. Chất liệu cotton cao cấp mang lại cảm giác thoải mái, thấm hút mồ hôi tốt khi mặc.</p>
+                            
+                            <h4>Đặc điểm nổi bật</h4>
+                            <ul>
+                                <li>Chất liệu cotton cao cấp, thoáng mát</li>
+                                <li>Form regular fit thanh lịch</li>
+                                <li>Đường may tỉ mỉ, chắc chắn</li>
+                                <li>Dễ dàng phối đồ</li>
+                            </ul>
+
+                            <h4>Hướng dẫn bảo quản</h4>
+                            <ul>
+                                <li>Giặt máy ở nhiệt độ thường</li>
+                                <li>Không sử dụng chất tẩy</li>
+                                <li>Ủi ở nhiệt độ thấp</li>
+                                <li>Phơi trong bóng râm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="specifications" class="tab-pane">
+                    <div class="specifications-content">
+                        <h3>Thông số sản phẩm</h3>
+                        <table class="specs-table">
+                            <tbody>
+                                <tr>
+                                    <td>Chất liệu</td>
+                                    <td>100% cotton</td>
+                                </tr>
+                                <tr>
+                                    <td>Xuất xứ</td>
+                                    <td>Việt Nam</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiểu dáng</td>
+                                    <td>Regular fit</td>
+                                </tr>
+                                <tr>
+                                    <td>Cổ áo</td>
+                                    <td>Cổ đức</td>
+                                </tr>
+                                <tr>
+                                    <td>Tay áo</td>
+                                    <td>Dài</td>
+                                </tr>
+                                <tr>
+                                    <td>Họa tiết</td>
+                                    <td>Trơn</td>
+                                </tr>
+                                <tr>
+                                    <td>Phù hợp</td>
+                                    <td>Công sở, Dự tiệc, Đi chơi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="size-guide" class="tab-pane">
+                    <div class="size-guide-content">
+                        <h3>Hướng dẫn chọn size</h3>
+                        
+                        <div class="measurement-guide">
+                            <h4>Cách đo</h4>
+                            <div class="measurement-steps">
+                                <div class="step">
+                                    <i class="fas fa-ruler"></i>
+                                    <p><strong>Vai:</strong> Đo ngang từ đầu vai trái đến đầu vai phải</p>
+                                </div>
+                                <div class="step">
+                                    <i class="fas fa-ruler"></i>
+                                    <p><strong>Ngực:</strong> Đo vòng ngực tại vị trí rộng nhất</p>
+                                </div>
+                                <div class="step">
+                                    <i class="fas fa-ruler"></i>
+                                    <p><strong>Eo:</strong> Đo vòng eo tại vị trí nhỏ nhất</p>
+                                </div>
+                                <div class="step">
+                                    <i class="fas fa-ruler"></i>
+                                    <p><strong>Dài:</strong> Đo từ đỉnh vai đến gấu áo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="size-table">
+                            <h4>Bảng size chi tiết (cm)</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Vai</th>
+                                        <th>Ngực</th>
+                                        <th>Eo</th>
+                                        <th>Dài</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>S</td>
+                                        <td>42</td>
+                                        <td>96</td>
+                                        <td>88</td>
+                                        <td>68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>44</td>
+                                        <td>100</td>
+                                        <td>92</td>
+                                        <td>70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>L</td>
+                                        <td>46</td>
+                                        <td>104</td>
+                                        <td>96</td>
+                                        <td>72</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XL</td>
+                                        <td>48</td>
+                                        <td>108</td>
+                                        <td>100</td>
+                                        <td>74</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="size-notes">
+                            <h4>Lưu ý khi chọn size</h4>
+                            <ul>
+                                <li>Số đo trong bảng là số đo cơ thể, không phải số đo quần áo</li>
+                                <li>Nếu số đo của bạn nằm giữa hai size, hãy chọn size lớn hơn</li>
+                                <li>Các số đo có thể chênh lệch 1-2cm do phương pháp đo</li>
+                                <li>Liên hệ với chúng tôi nếu bạn cần tư vấn thêm về size</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2>Sản phẩm liên quan</h2>
+            <div class="product-grid">
+                <!-- Related products will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html> 
